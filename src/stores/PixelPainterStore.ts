@@ -37,7 +37,7 @@ export const setColor = (x:number,y:number) => {
 
 export const clear = () => {
   PixelPainterStore.update(
-    s => {s.canvas.map(s => {
+    s => {s.canvas.forEach(s => {
       for(var i = 0; i< 16; i++)
           s[i] = "#FFFFFF"
       })
@@ -47,7 +47,7 @@ export const clear = () => {
 
 export const random = () => {
   PixelPainterStore.update(
-    s => {s.canvas.map(s => {
+    s => {s.canvas.forEach(s => {
       for(var i = 0; i< 16; i++)
           switch (Math.floor(Math.random() * 12) + 1) {
             case 1:

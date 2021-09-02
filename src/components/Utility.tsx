@@ -1,4 +1,4 @@
-import {PixelPainterStore, clear, random} from "../stores/PixelPainterStore"
+import {clear, random} from "../stores/PixelPainterStore"
 
 const Utility = () => {
   return (
